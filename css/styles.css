@@ -1,17 +1,64 @@
-body{
+body {
     background-color: rgba(190, 184, 184, 0.685);
 }
 
-.info{
+.container {
+    background-color: rgba(0, 0, 0, 0.164);
+    position: fixed;
+    height: 300px;
+    top: -14%;
+    border: 5%;
+    left: 5%;
+    border-bottom: 5px solid black;
+}
+
+.obstacle {
+    position: fixed;
+    top: 42%;
+    animation: tree 5s infinite linear;
+}
+
+.info {
     width: 65ch;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 30%;
 }
-.game{
+
+.game {
     margin-top: 10%;
 }
 
-.player{
+.player {
     font-size: 6rem;
-    position: relative;
+    position: fixed;
+    top: 40%;
+    left: 10%;
+}
+
+.jump {
+    animation: jump .7s infinite linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 40%;
+    }
+    30% {
+        top: 12%
+    }
+    70% {
+        top: 10%
+    }
+    100% {
+        top: 40%;
+    }
+}
+
+@keyframes tree {
+    0% {
+        left: 87%;
+    }
+    100% {
+        left: 5%;
+    }
 }
