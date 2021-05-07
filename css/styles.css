@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(190, 184, 184, 0.685);
+}
+
+.info{
+    width: 65ch;
+    margin: auto;
+    margin-top: 5%;
+}
+.game{
+    margin-top: 10%;
+}
+
+.player{
+    font-size: 6rem;
+    position: relative;
+}
